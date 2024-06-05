@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "username": "user1",
+      "password": "password123"
+    },
+    {
+      "username": "user2",
+      "password": "letmein567"
+    },
+    {
+      "username": "user3",
+      "password": "abc1234"
+    },
+    {
+      "username": "user4",
+      "password": "qwerty987"
+    },
+    {
+      "username": "user5",
+      "password": "welcome321"
+    },
+    {
+      "username": "max",
+      "password": "123456"
+    }
+  ]
+}

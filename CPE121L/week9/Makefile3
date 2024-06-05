@@ -1,0 +1,18 @@
+APPEND = week9
+all : main.o ../week9-1/Area.o ../week9-1/Circle.o ../week9-1/Squre.o
+	g++ main.o ../week9-1/Area.o ../week9-1/Circle.o ../week9-1/Squre.o -o $(APPEND)
+
+../week9-1/Area.o : ../week9-1/Area.cpp
+	g++ -c ../week9-1/Area.cpp -o ../week9-1/Area.o
+
+../week9-1/Circle.o : ../week9-1/Circle.cpp
+	g++ -c ../week9-1/Circle.cpp -o ../week9-1/Circle.o
+
+../week9-1/Squre.o : ../week9-1/Squre.cpp
+	g++ -c ../week9-1/Squre.cpp -o ../week9-1/Squre.o
+
+main.o : main.cpp
+	g++ -c main.cpp -o main.o
+
+clean :
+	rm -f *.o ../week9-1/Squre.o ../week9-1/Circle.o ../week9-1/Area.o $(APPEND)
